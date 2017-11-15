@@ -69,8 +69,7 @@ function createZip (html, images) {
   
   dataList.push(blob);
   
-  var zip = Utilities.zip(dataList, name +".zip"); 
-  return zip;
+  return Utilities.zip(dataList, name +".zip");
 }
 
 function createDocumentForHtml(html, images) {
