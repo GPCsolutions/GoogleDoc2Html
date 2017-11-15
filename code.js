@@ -16,7 +16,6 @@ function ConvertGoogleDocToCleanHtml() {
   var zip = createZip(html, images);
   
   emailHtml(html, images, zip);
-  //createDocumentForHtml(html, images);
 }
 
 function emailHtml(html, images, zip) {
