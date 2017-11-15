@@ -23,11 +23,11 @@ function emailHtml(html, images, zip) {
   var name = DocumentApp.getActiveDocument().getName();
   
   var attachments = [];
-  for (var j=0; j<images.length; j++) {
+  for (var i=0; i<images.length; i++) {
     attachments.push( {
-      "fileName": images[j].name + ".html",
-      "mimeType": images[j].type,
-      "content": images[j].blob.getBytes() 
+      "fileName": images[i].name + ".html",
+      "mimeType": images[i].type,
+      "content": images[i].blob.getBytes()
     });
   }
 
