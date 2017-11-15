@@ -84,7 +84,9 @@ function createDocumentForHtml(html, images) {
 function dumpAttributes(atts) {
   // Log the paragraph attributes.
   for (var att in atts) {
-    Logger.log(att + ":" + atts[att]);
+    if (atts.hasOwnProperty(att)) {
+        Logger.log(att + ":" + atts[att]);
+    }
   }
 }
 
